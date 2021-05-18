@@ -1,0 +1,11 @@
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\bin\Debug\SampleDemoPdf.Entity.dll.config
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\bin\Debug\SampleDemoPdf.Entity.dll
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\bin\Debug\SampleDemoPdf.Entity.pdb
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\bin\Debug\EntityFramework.dll
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\bin\Debug\EntityFramework.SqlServer.dll
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\bin\Debug\EntityFramework.xml
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\bin\Debug\EntityFramework.SqlServer.xml
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\obj\Debug\SampleDemoPdf.Entity.csproj.CopyComplete
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\obj\Debug\SampleDemoPdf.Entity.dll
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\obj\Debug\SampleDemoPdf.Entity.pdb
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Entity\obj\Debug\SampleDemoPdf.Entity.csprojAssemblyReference.cache

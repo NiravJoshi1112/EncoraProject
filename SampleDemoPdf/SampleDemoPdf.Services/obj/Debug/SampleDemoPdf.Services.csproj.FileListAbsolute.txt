@@ -1,0 +1,5 @@
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Services\bin\Debug\SampleDemoPdf.Services.dll
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Services\bin\Debug\SampleDemoPdf.Services.pdb
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Services\obj\Debug\SampleDemoPdf.Services.dll
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Services\obj\Debug\SampleDemoPdf.Services.pdb
+D:\SampleApp\SampleDemoPdf\SampleDemoPdf.Services\obj\Debug\SampleDemoPdf.Services.csprojAssemblyReference.cache

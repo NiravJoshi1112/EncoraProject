@@ -1,0 +1,68 @@
+﻿<div class="jumbotron">
+    <form id="data" method="post" enctype="multipart/form-data">
+        <h1>Sample Pdf Demo</h1>
+        <label for="User">User:</label>
+        <select name="User" id="UserDrp">
+            
+        </select>
+        <p class="lead"><input type="file" id="uploadFile" /></p>
+        <p><input type="button" class="btn btn-primary btn-lg" id="btnUpload" value="Upload Files" /> </p>
+    </form>
+</div>
+    
+<script src="~/Scripts/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+        $.ajax({
+            type: "GET",
+            url: "https://localhost:44352/api/pdf/GetUserList",
+            dataType: "json",
+            success: function (data) {
+                $.each(data, function (i, obj) {
+                    var div_data = "<option value=" + obj.UserId + ">" + obj.UserName + "</option>";
+                    $(div_data).appendTo('#UserDrp');
+                });
+            }
+        });
+
+        $('#btnUpload').click(function () {
+            if (window.FormData !== undefined) {
+                debugger;
+                var fileUpload = $("#uploadFile").get(0).files;
+
+                // Create FormData object  
+                var fileData = new FormData();
+
+               if (fileUpload.length > 0) {
+                   fileData.append("UploadedFile", fileUpload[0]);
+              }
+
+                // Adding one more key to FormData object  
+                fileData.append('userId', $('#UserDrp').val());
+
+                $.ajax({
+                    type: "POST",
+                    url: "https://localhost:44352/api/pdf/SavePdfData?userId="+$('#UserDrp').val(),
+                    type: "POST",
+                    contentType: false,
+                    processData: false, // Not to process data  
+                    data: fileData,
+                    success: function (data) {
+                        debugger
+                        if (data == true || data == 'true') {
+                            alert('Added successfully');
+                             window.location.href =  '@Url.Action("Index", "Home")'
+                        }
+                        else {
+                             alert('upload fail')
+                        }
+                    }
+                });
+            }
+            else {
+                alert("FormData is not supported.");
+            }
+        });
+    });
+</script>
+
